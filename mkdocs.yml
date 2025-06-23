@@ -1,0 +1,79 @@
+site_name: 狼人小林 's 像素字体开发教程
+site_url: https://pixel-font-development-tutorials.takwolf.com
+repo_name: TakWolf/pixel-font-development-tutorials
+repo_url: https://github.com/TakWolf/pixel-font-development-tutorials
+copyright: © 2025 狼人小林
+
+nav:
+  - 首页:
+    - index.md
+    - home/about.md
+    - home/community.md
+    - home/license.md
+    - home/sponsors.md
+  - 搭建环境:
+    - setup/index.md
+  - 教程:
+    - tutorials/index.md
+  - 字体知识:
+    - knowledge/index.md
+  - 技术研究:
+    - others/index.md
+
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: favicon.ico
+  logo: logo.png
+  language: zh
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - scheme: default
+      primary: deep orange
+      toggle:
+        name: 切换到深色模式
+        icon: material/lightbulb
+    - scheme: slate
+      primary: purple
+      toggle:
+        name: 切换到浅色模式
+        icon: material/lightbulb-outline
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.top
+    - content.code.copy
+
+extra:
+  social:
+    - name: GitHub
+      icon: fontawesome/brands/github
+      link: https://github.com/TakWolf
+    - name: itch.io
+      icon: fontawesome/brands/itch-io
+      link: https://takwolf.itch.io
+    - name: Bilibili
+      icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/445245
+    - name: Twitter
+      icon: fontawesome/brands/twitter
+      link: https://twitter.com/takgdx
+    - name: Discord
+      icon: fontawesome/brands/discord
+      link: https://discord.gg/3GKtPKtjdU
+    - name: QQ Group
+      icon: fontawesome/brands/qq
+      link: https://qm.qq.com/q/X1mLrLLGYS
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
