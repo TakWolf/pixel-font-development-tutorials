@@ -17,10 +17,14 @@ nav:
     - setup/aseprite.md
   - 教程:
     - tutorials/index.md
+    - Pixel Font Builder:
+      - tutorials/pixel-font-builder/0.md
+      - tutorials/pixel-font-builder/1.md
   - 字体知识:
     - knowledge/index.md
   - 技术研究:
     - others/index.md
+    - others/pixel-glyph-bolding-algorithm/index.md
 
 theme:
   name: material
