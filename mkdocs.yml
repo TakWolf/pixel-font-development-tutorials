@@ -51,6 +51,7 @@ theme:
     - navigation.tracking
     - navigation.tabs
     - navigation.indexes
+    - navigation.expand
     - navigation.top
     - content.code.copy
 
