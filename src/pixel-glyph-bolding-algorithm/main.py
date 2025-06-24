@@ -27,6 +27,7 @@ def move_left_and_overlap_bolding(bitmap: MonoBitmap) -> MonoBitmap:
 
 def inflation_bolding(bitmap: MonoBitmap) -> MonoBitmap:
     result_bitmap = bitmap.scale(scale_x=4, scale_y=4).resize(left=1, right=1, top=1, bottom=1).stroke(1)
+    result_bitmap = result_bitmap.scale(scale_x=0.5, scale_y=0.5)
     return result_bitmap
 
 
