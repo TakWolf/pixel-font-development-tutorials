@@ -6,9 +6,9 @@ from pixel_font_knife.mono_bitmap import MonoBitmap
 project_root_dir = Path(__file__).parent
 glyphs_dir = project_root_dir.joinpath('assets', 'glyphs')
 build_dir = project_root_dir.joinpath('build')
-move_right_and_overlap_bolding_dir = build_dir.joinpath('move_right_and_overlap_bolding')
-move_left_and_overlap_bolding_dir = build_dir.joinpath('move_left_and_overlap_bolding')
-inflation_bolding_dir = build_dir.joinpath('inflation_bolding')
+move_right_and_overlap_bolding_dir = build_dir.joinpath('move-right-and-overlap-bolding')
+move_left_and_overlap_bolding_dir = build_dir.joinpath('move-left-and-overlap-bolding')
+inflation_bolding_dir = build_dir.joinpath('inflation-bolding')
 
 
 def move_right_and_overlap_bolding(bitmap: MonoBitmap) -> MonoBitmap:
@@ -26,7 +26,7 @@ def move_left_and_overlap_bolding(bitmap: MonoBitmap) -> MonoBitmap:
 
 
 def inflation_bolding(bitmap: MonoBitmap) -> MonoBitmap:
-    result_bitmap = bitmap.scale(scale_x=4, scale_y=4).resize(left=1, right=1, top=1, bottom=1).stroke(1)
+    result_bitmap = bitmap.scale(scale_x=4, scale_y=4).resize(left=1, right=1, top=1, bottom=1).pixel_expand(1)
     result_bitmap = result_bitmap.scale(scale_x=0.5, scale_y=0.5)
     return result_bitmap
 

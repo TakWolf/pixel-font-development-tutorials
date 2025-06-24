@@ -72,7 +72,7 @@ def move_left_and_overlap_bolding(bitmap: MonoBitmap) -> MonoBitmap:
 
 名字是我随便起的。
 
-思路是，先把字形放大 4 倍，然后将所有像素点向 8 个方向扩展 1px（相当于笔画加粗 2px），得到的图形在缩放 0.5 倍（此时正好可以无所缩放）。
+思路是，先把字形放大 4 倍，然后将所有像素点向 8 个方向扩展 1px（相当于笔画加粗 2px），得到的图形在缩放 0.5 倍（此时正好可以无损缩放）。
 
 如果是 12 * 12 尺寸的字形，变换后为 25 * 25。
 
@@ -80,7 +80,7 @@ def move_left_and_overlap_bolding(bitmap: MonoBitmap) -> MonoBitmap:
 
 ```python
 def inflation_bolding(bitmap: MonoBitmap) -> MonoBitmap:
-    result_bitmap = bitmap.scale(scale_x=4, scale_y=4).resize(left=1, right=1, top=1, bottom=1).stroke(1)
+    result_bitmap = bitmap.scale(scale_x=4, scale_y=4).resize(left=1, right=1, top=1, bottom=1).pixel_expand(1)
     result_bitmap = result_bitmap.scale(scale_x=0.5, scale_y=0.5)
     return result_bitmap
 ```
