@@ -223,8 +223,8 @@ if __name__ == '__main__':
 
 1. 设置字体参数（字体尺寸、上升、下降等）
 2. 设置字体元信息（版本号、字体名称、作者、版权等）
-3. 添加字形位图
-4. 添加 Unicode 编码到 字形的映射关系
+3. 添加字形
+4. 添加 Unicode 编码到字形的映射关系
 5. 输出指定的格式
 
 我们一个一个来说。
@@ -274,7 +274,7 @@ builder.meta_info.designer_url = 'https://takwolf.com'
 builder.meta_info.license_url = 'https://openfontlicense.org'
 ```
 
-### 3.添加字形位图
+### 3.添加字形
 
 ```python
 builder.glyphs.append(Glyph(
@@ -350,10 +350,12 @@ builder.save_otf(build_dir.joinpath('my-font.otf'))
 builder.save_ttf(build_dir.joinpath('my-font.ttf'))
 ```
 
-我们输出了两种格式，`otf` 和 `ttf`，这是目前操作系统最流行使用的两种格式。
+我们输出了两种格式，`otf` 和 `ttf`，这是目前操作系统最流行的两种字体格式。
 
 ## 尾声
 
-至此，我们完成了第一个字体的构建。这是我们踏出的第一步，干杯。
+至此，我们完成了第一个字体的构建。
+
+这是我们踏出的第一步，干杯。
 
 本章的完整代码位于：[pixel-font-builder/1](https://github.com/TakWolf/pixel-font-development-tutorials/tree/master/src/pixel-font-builder/1)
