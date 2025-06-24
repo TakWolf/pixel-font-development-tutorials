@@ -13,6 +13,8 @@ nav:
     - home/sponsors.md
   - 搭建环境:
     - setup/index.md
+    - setup/python/index.md
+    - setup/aseprite.md
   - 教程:
     - tutorials/index.md
   - 字体知识:
