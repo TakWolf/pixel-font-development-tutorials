@@ -18,8 +18,8 @@ nav:
   - 教程:
     - tutorials/index.md
     - Pixel Font Builder:
-      - tutorials/pixel-font-builder/0.md
-      - tutorials/pixel-font-builder/1/index.md
+      - tutorials/pixel-font-builder/0/main.md
+      - tutorials/pixel-font-builder/1/main.md
   - 字体知识:
     - knowledge/index.md
   - 技术研究:
